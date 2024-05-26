@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Media/imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    justify-content: center;
+    display: flex;
+    padding: 70px;
+    align-items: center;
+    background-image: url(../Media/imagenes/cafeteriaexterior.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header h2 {
+    color: white;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 75px;
+    background: linear-gradient(#f7fe2e, #ffbf00);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: text 5s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.logo {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+
+.logo img {
+    max-width: 250%;
+    height: 200px;
+}
+
+/*caracteriscas de los botones*/
+.logo-animation {
+    display: inline-block;
+    padding: 2.5rem 2.5rem;
+    /*creando transicion a los botones*/
+    transition-property: background-color, transform;
+    transition-duration: 2s;
+}
+
+/*animacion cambiar color a los botones*/
+.logo-animation:hover {
+    /*animacion cabiar tamaño de los botones*/
+    transform: scale(1.2);
+}
+
+
+/*probando*/
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 216, 131, 0.8);    
+    border-radius: 10px;
+}
+
+/* Estilos de la cabecera */
+.Nombre h1 {
+    margin: 0;
+}
+
+/* Estilos del formulario de inicio de sesión */
+.acceso {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.acceso h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    width: 100%;
+    height: 40px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Media/imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    padding: 70px;
+    align-items: center;
+    background-image: url(../Media/imagenes/cafeteriaexterior.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header h2{
+    color: white;
+}
+
+
+.header h1{
+    font-size: 75px;
+    background: linear-gradient(#f7fe2e, #ffbf00);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: text 5s linear infinite;
+}
+@keyframes text{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+.logo{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+
+.logo img {
+    max-width: 250%;
+    height: 200px;
+}
+
+/*caracteriscas de los botones*/
+.logo-animation{
+    display: inline-block;
+    padding: 2.5rem 2.5rem;
+/*creando transicion a los botones*/
+    transition-property: background-color, transform;
+    transition-duration: 2s ;
+}
+
+.logo-animation:hover{
+    /*animacion cabiar tamaño de los botones*/
+    transform: scale(1.2);
+}
+
+.container-xxl .experiencia{
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    background-color: rgba(255, 216, 131, 0.8);    
+}
+
+.acerca-de {
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 216, 131, 0.8);    
+    color: rgb(0, 0, 0);
+  }
+  
+
+
+.acerca-de h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.acerca-de p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.acerca-de ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+.acerca-de img {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
